@@ -1,0 +1,126 @@
+
+body{
+    background-color: #490085;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    margin-bottom: 40px; 
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+h1 {
+    color: #490085;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header li{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+
+.school-container {
+    display: flex;  
+    align-items: center; 
+    gap: 40px;  
+}
+
+.school-logo img {
+    width: 180px; 
+    height: auto;  
+}
+
+.school-info {
+    flex: 1;  
+}
+
+.skills-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    overflow: hidden;
+    background-color: rgb(221, 165, 235);
+}
+
+.skill-slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+}
+
+.skill-slide.active {
+    opacity: 1;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
