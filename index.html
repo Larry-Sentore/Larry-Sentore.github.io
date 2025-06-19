@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "wqd19tNPkj0b7RCwW",
+        });
+    })();
+    </script>
 </head>
 
 <body>
@@ -81,25 +91,36 @@
             
     <section id="Extracurriculars">
         <h2>Volunteer Work</h2>
+        <div class="volunteer-container"></div>    
+            <div class="volunteer-card">
+                <strong>April 2017, Event Organizer</strong>
+                <p>Burundi American International Academy - Bujumbura Burundi</p>
+                <p>●	Organized the Organized the United Students for Social Initiatives Gala Dinner</p>
+                <p>●    Was in charge of the invite list, spreading the word, checking tickets, and the end of night giveaway draw </p>
+            </div>  
+            <div class="volunteer-card">
+                <strong>March 2018, Game Night Host</strong>
+                <p>Burundi American International Academy - Bujumbura, Burundi</p>
+                <p>●	Co-hosted a game night at the Belgian School (reading trivia questions, announcing winners…etc.)</p>
+            </div>  
+        </div>
+    </section>
 
-        <strong>April 2017, Event Organizer</strong>
-        <p>Burundi American International Academy - Bujumbura Burundi</p>
-        <p>●	Organized the Organized the United Students for Social Initiatives Gala Dinner</p>
-        <p>●    Was in charge of the invite list, spreading the word, checking tickets, and the end of night giveaway draw </p>
-
-
-        <strong>March 2018, Game Night Host</strong>
-        <p>Burundi American International Academy - Bujumbura, Burundi</p>
-        <p>●	Co-hosted a game night at the Belgian School (reading trivia questions, announcing winners…etc.)</p>
-        
+    <section id="Accomplishments">
         <h2>Accomplishments</h2>
-        <ul>
-            <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/49182/preview.svg" alt="Graduation cap" class="grad">
-            <li>2024, Graduated Valedictorian of BAIA</li>
-            <img src="https://b2b.affariofsweden.com/storage/E1778EAB5BA4DA936822E77C56A1EE6E166AB487F57E12ABF55FCDC082559667/86ef39deae7945c0bd8a6268884e4a75/520-520-0-png.Png/media/c23d8763cdb3453aa08c17cb7c4c501c/089-244-60.png" alt="Chess piece" class="chess">
-            <li>2023, Became National Chess Champion of Burundi</li>
-            
-        </ul>
+        <div class="accomplishments-container">
+            <div class="accomplishment-card">
+                <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/49182/preview.svg" alt="Graduation cap">
+                <p>2024, Graduated Valedictorian of BAIA</p>
+            </div>
+
+            <div class="accomplishment-card">
+                <img src="https://b2b.affariofsweden.com/storage/E1778EAB5BA4DA936822E77C56A1EE6E166AB487F57E12ABF55FCDC082559667/86ef39deae7945c0bd8a6268884e4a75/520-520-0-png.Png/media/c23d8763cdb3453aa08c17cb7c4c501c/089-244-60.png" alt="Chess piece">
+                <p>2023, Became National Chess Champion of Burundi</p>
+            </div>
+        </div>
+    </section>
+    <section id="Hobbies">
         <h2>Hobbies</h2>
         <ul>
             <li>Reading: I enjoy reading books on technology, science fiction, and philosophy.</li>
@@ -113,6 +134,18 @@
 <footer>
     <section id="contact">
         <h2>Contact</h2>
+        <form id="contact-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
         <p>If you would like to get in touch with me, please feel free to reach out via email or connect with me on LinkedIn.</p>
         <ul>
             <li>Email: <a href="mailto:sentorelarrykim@gmail.com" >sentorelarrykim@gmail.com</a></li>
@@ -125,7 +158,7 @@
     <section id="Download">
         <h2>Download My Resume</h2>
         <p>You can download my resume in PDF format by clicking the link below:</p>
-        <a href="resume.pdf" download>Download Resume</a>
+        <a href="Resume.pdf" download>Download Resume</a>
     </section>
 
 <script src="java.js"></script>
