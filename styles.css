@@ -1,6 +1,6 @@
 
 body{
-    background-color: #a55ee8;
+    background-color: #6317ab;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -103,7 +103,7 @@ nav {
     max-width: 500px;
     height: 150px;
     overflow: hidden;
-    background-color: rgb(221, 165, 235);
+    background-color: rgb(125, 39, 171);
 }
 
 .skill-slide {
