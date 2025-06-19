@@ -1,12 +1,13 @@
-
-body{
-    background-color: #6317ab;
+/* Set base styles for the whole page */
+body {
+    background-color: #6317ab; /* Deep purple background */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px; /* Space at the bottom to prevent content from touching the edge */
 }
 
+/* Header section with white background and flex layout */
 header {
     background-color: #ffffff;
     padding: 20px;
@@ -14,38 +15,42 @@ header {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* Spread items across the header */
     align-items: center;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
+/* Main heading style */
 h1 {
-    color: #490085;
+    color: #490085; /* Bold purple for strong impact */
     font-family: "Nunito", sans-serif;
     font-size: 2.5em;
     margin: 0;
 }
 
+/* Navigation list styles inside header */
 header ul {
-    list-style: none;
+    list-style: none; /* No bullets */
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Space between nav items */
 }
 
-header li{
+/* Each nav item */
+header li {
     font-family: "Nunito", sans-serif;
     font-size: 1.2em;
 }
 
+/* Navigation wrapper */
 nav {
     display: flex;
     gap: 20px;
 }
 
-
-#about{
+/* About section — centered with profile picture and text */
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,17 +63,18 @@ nav {
     font-size: 2em;
     margin-top: 0;
     margin-bottom: 40px;
-    
 }
 
+/* Profile image style */
 #about img {
     width: 200px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%; /* Circle image */
     margin-bottom: 20px;
 }
 
-#Education{
+/* Education section styled similar to About */
+#Education {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,33 +85,38 @@ nav {
     font-family: "Nunito", sans-serif;
     font-size: 1.5em;
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
+/* Layout for schools listed in Education */
 .school-container {
-    display: flex;  
-    align-items: center; 
-    gap: 40px;  
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
+/* School logo image size */
 .school-logo img {
-    width: 180px; 
-    height: auto;  
+    width: 180px;
+    height: auto;
 }
 
+/* Info section next to school logo */
 .school-info {
-    flex: 1;  
+    flex: 1;
 }
 
+/* Container for skill slides (kind of like a carousel) */
 .skills-container {
     position: relative;
     width: 100%;
     max-width: 500px;
     height: 150px;
     overflow: hidden;
-    background-color: rgb(125, 39, 171);
+    background-color: rgb(125, 39, 171); /* Deep purple for contrast */
 }
 
+/* Each individual skill slide */
 .skill-slide {
     position: absolute;
     width: 100%;
@@ -114,10 +125,12 @@ nav {
     text-align: center;
 }
 
+/* Show this one */
 .skill-slide.active {
     opacity: 1;
 }
 
+/* Skills section container */
 #skills {
     display: flex;
     flex-direction: column;
@@ -129,9 +142,10 @@ nav {
     font-family: "Nunito", sans-serif;
     font-size: 1.5em;
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
+/* Extracurriculars title styling */
 #Extracurriculars h2 {
     text-align: center;
     color: #000000;
@@ -140,6 +154,7 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Extracurriculars section layout */
 #Extracurriculars {
     display: flex;
     flex-direction: column;
@@ -151,13 +166,15 @@ nav {
     font-family: "Nunito", sans-serif;
     font-size: 1.5em;
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
+/* Padding section for accomplishments */
 #Accomplishments {
-  padding: 40px 20px;
+    padding: 40px 20px;
 }
 
+/* Accomplishments heading */
 #Accomplishments h2 {
     border-radius: 10px;
     padding: 20px;
@@ -168,31 +185,35 @@ nav {
     margin-bottom: 30px;
 }
 
+/* Container that holds all the accomplishment cards */
 .accomplishments-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* So they don't overflow */
 }
 
+/* Each individual accomplishment card */
 .accomplishment-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  background-color: #ffffff;
-  color:#000000;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.5em;
-  padding: 15px 20px;
-  border-radius: 10px;
-  width: 360px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 360px;
 }
 
+/* Image on the accomplishment card */
 .accomplishment-card img {
-  width: 70px;
-  height: auto;
+    width: 70px;
+    height: auto;
 }
 
+/* Hobbies section, similar layout */
 #Hobbies {
     display: flex;
     flex-direction: column;
@@ -204,9 +225,10 @@ nav {
     font-family: "Nunito", sans-serif;
     font-size: 1.5em;
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
+/* Contact section styling */
 #contact {
     display: flex;
     flex-direction: column;
@@ -218,27 +240,29 @@ nav {
     font-family: "Nunito", sans-serif;
     font-size: 1.5em;
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
+/* Style for the submit button in the contact form */
 #contact-form button {
-  padding: 10px;
-  background-color: #490085;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 0.5em;
+    padding: 10px;
+    background-color: #490085; /* Deep purple */
+    color: #fff;
+    border-radius: 6px;
+    font-size: 0.5em;
 }
 
+/* Input fields and textarea inside the contact form */
 #contact-form input,
 #contact-form textarea {
-  padding: 7px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: "Nunito", sans-serif;
+    padding: 7px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: "Nunito", sans-serif;
 }
 
-
+/* Resume download section */
 #Download {
     background-color: #ffffff;
     font-family: "Nunito", sans-serif;

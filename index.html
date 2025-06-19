@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- This is for the EmailJS integration -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
@@ -22,6 +23,7 @@
 
 <body>
     <header>
+        <!-- This is where the navigation links are located -->
         <h1>Larry's Portfolio</h1>
         <nav>
             <ul>
@@ -33,6 +35,7 @@
         </nav>
     </header>
     <section id="about">
+        <!--This section contains my introduction and photo which will be resized> -->
          <p>Welcome to my portfolio! Here you will find information about my education, extracurricular activities, and how to contact me.</p>
         <h2>About Me</h2>
         <img src = "photo.jpeg" alt="Larry's Photo" id = "photo">
@@ -42,7 +45,8 @@
     <section id="Education">
     <h2>Education</h2>
     <section id="school">
-        
+        <!-- This is where my education information is located> -->
+        <!--Each school is in its own div and they are in one large div. This is to help with the styling -->
         <div class="school-container">
             <div class="school-logo">
                 <img src="https://miro.medium.com/v2/resize:fit:2400/1*AQuXpUGQ1EjZpP3fbrbxww.png" alt="African Leadership University Logo">
@@ -71,6 +75,7 @@
     </section>
     
     <section id="skills">
+        <!-- This is the skills slide. It will be a slideshow so each skill is in its own div -->
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill-slide active">
@@ -91,6 +96,8 @@
             
     <section id="Extracurriculars">
         <h2>Volunteer Work</h2>
+        <!-- Here is where my volunteer work will go -->
+         <!-- Each experience is in its own div for styling purposes -->
         <div class="volunteer-container"></div>    
             <div class="volunteer-card">
                 <strong>April 2017, Event Organizer</strong>
@@ -108,6 +115,9 @@
 
     <section id="Accomplishments">
         <h2>Accomplishments</h2>
+        <!-- This section will contain my accomplishments -->
+         <!-- Each accomplishment is in its own container for styling purposes -->
+          <!-- Images have been added aswell for visual appeal -->
         <div class="accomplishments-container">
             <div class="accomplishment-card">
                 <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/49182/preview.svg" alt="Graduation cap">
@@ -121,6 +131,7 @@
         </div>
     </section>
     <section id="Hobbies">
+        <!-- This section will contain my hobbies -->
         <h2>Hobbies</h2>
         <ul>
             <li>Reading: I enjoy reading books on technology, science fiction, and philosophy.</li>
@@ -132,6 +143,7 @@
 
 </body>
 <footer>
+    <!-- This is the contact form. Each category is required -->
     <section id="contact">
         <h2>Contact</h2>
         <form id="contact-form" action="#" method="post">
@@ -155,11 +167,14 @@
         </ul>
     </section>
 </footer>
+    <!-- This is the download section for my resume -->
+     <!-- I've added the pdf to the repo so I can link it directly here and use the download feature -->
     <section id="Download">
         <h2>Download My Resume</h2>
         <p>You can download my resume in PDF format by clicking the link below:</p>
         <a href="Resume.pdf" download>Download Resume</a>
     </section>
 
+    <!-- Linking the java  -->
 <script src="java.js"></script>
 
